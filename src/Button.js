@@ -22,16 +22,15 @@ export default Button;
 
 const buttonStyle = StyleSheet.create({
   button: {
-    backgroundColor: 'purple',
-    width: 232,
-    height: 56,
+    backgroundColor: 'rgb(24, 128, 251)',
+    padding: 16,
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 8,
   },
   buttonTitle: {
     color: '#fff',
-    fontWeight: 'bold',
+    // fontWeight: 'bold',
     fontSize: 18,
   }
 });
