@@ -2,9 +2,11 @@ const DEFAULT_ACTIVE_BUTTON_OPACITY = .7;
 const DEFAULT_BUTTON_TEXT_FONT_SIZE = 18;
 const PRIMARY_COLOR = 'rgb(24, 128, 251)';
 const PRIMARY_TEXT_COLOR = 'rgb(255,255,255)';
+const PRIMARY_BORDER_COLOR = 'rgb(200,200,200)';
 const DEFAULT_BUTTON_STYLE = {
   padding: 16,
   borderRadius: 8,
+  minWidth: 128,
   alignItems: 'center',
   justifyContent: 'center',
 };
@@ -14,5 +16,6 @@ export {
   DEFAULT_BUTTON_TEXT_FONT_SIZE,
   PRIMARY_COLOR,
   PRIMARY_TEXT_COLOR,
+  PRIMARY_BORDER_COLOR,
   DEFAULT_BUTTON_STYLE,
 };

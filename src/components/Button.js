@@ -1,6 +1,5 @@
 import React from 'react';
 import { TouchableOpacity, Text } from 'react-native';
-import resolveColorScheme from '../helpers/resolveColorScheme';
 import {
   DEFAULT_ACTIVE_BUTTON_OPACITY,
   PRIMARY_COLOR,
@@ -15,13 +14,11 @@ const Button = (props) => {
     backgroundColor: PRIMARY_COLOR,
     ...DEFAULT_BUTTON_STYLE,
     ...props.style,
-    ...resolveColorScheme(props)
   };
 
   const textStyle = {
     fontSize: DEFAULT_BUTTON_TEXT_FONT_SIZE,
-    color: PRIMARY_TEXT_COLOR,
-    ...resolveColorScheme(props)
+    color: props.style.color || PRIMARY_TEXT_COLOR,
   };
 
   return (

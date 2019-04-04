@@ -2,21 +2,24 @@ import React from 'react';
 import { TouchableOpacity, Text } from 'react-native';
 import {
   DEFAULT_ACTIVE_BUTTON_OPACITY,
-  PRIMARY_COLOR,
+  PRIMARY_TEXT_COLOR,
+  PRIMARY_BORDER_COLOR,
   DEFAULT_BUTTON_STYLE,
   DEFAULT_BUTTON_TEXT_FONT_SIZE,
 } from '../constants';
 
-const TextButton = (props) => {
+const OutlineButton = (props) => {
 
   const buttonStyle = {
+    borderWidth: 1,
+    borderColor: PRIMARY_BORDER_COLOR,
     ...DEFAULT_BUTTON_STYLE,
     ...props.style,
   };
 
   const textStyle = {
     fontSize: DEFAULT_BUTTON_TEXT_FONT_SIZE,
-    color: props.style.color || PRIMARY_COLOR,
+    color: props.style.color || PRIMARY_TEXT_COLOR,
   };
 
   return (
@@ -27,4 +30,4 @@ const TextButton = (props) => {
 
 }
 
-export default TextButton;
+export default OutlineButton;
