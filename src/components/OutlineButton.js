@@ -19,7 +19,7 @@ const OutlineButton = (props) => {
 
   const textStyle = {
     fontSize: DEFAULT_BUTTON_TEXT_FONT_SIZE,
-    color: props.style.color || PRIMARY_TEXT_COLOR,
+    color: (props.style && props.style.color) || PRIMARY_TEXT_COLOR,
   };
 
   return (
