@@ -1,30 +1,28 @@
 import React from 'react';
-import { TouchableOpacity, Text } from 'react-native';
-import {
-  DEFAULT_ACTIVE_BUTTON_OPACITY,
-  PRIMARY_COLOR,
-  DEFAULT_BUTTON_STYLE,
-  DEFAULT_BUTTON_TEXT_FONT_SIZE,
-} from '../constants';
+import StyledButton from './common/StyledButton';
+import ButtonText from './common/ButtonText';
+import { buttonDefaultColor } from '../constants';
 
-const TextButton = (props) => {
+const TextButtonStyle = {
+  backgroundColor: 'transparent',
+};
 
-  const buttonStyle = {
-    ...DEFAULT_BUTTON_STYLE,
-    ...props.style,
-  };
+const TextButtonTextStyle = {
+  color: buttonDefaultColor,
+};
 
-  const textStyle = {
-    fontSize: DEFAULT_BUTTON_TEXT_FONT_SIZE,
-    color: (props.style && props.style.color) || PRIMARY_COLOR,
-  };
-
-  return (
-    <TouchableOpacity onPress={props.onPress} style={buttonStyle} activeOpacity={DEFAULT_ACTIVE_BUTTON_OPACITY}>
-      <Text style={textStyle}>{props.title}</Text>
-    </TouchableOpacity>
-  );
-
-}
+const TextButton = (props) => (
+  <StyledButton {...props} style={{
+      ...props.style,
+      ...TextButtonStyle,
+    }}>
+    <ButtonText style={{
+        ...props.style,
+        ...TextButtonTextStyle
+      }}>
+      {props.title}
+    </ButtonText>
+  </StyledButton>
+);
 
 export default TextButton;

@@ -1,33 +1,29 @@
 import React from 'react';
-import { TouchableOpacity, Text } from 'react-native';
-import {
-  DEFAULT_ACTIVE_BUTTON_OPACITY,
-  PRIMARY_TEXT_COLOR,
-  PRIMARY_BORDER_COLOR,
-  DEFAULT_BUTTON_STYLE,
-  DEFAULT_BUTTON_TEXT_FONT_SIZE,
-} from '../constants';
+import StyledButton from './common/StyledButton';
+import ButtonText from './common/ButtonText';
+import { buttonDefaultColor } from '../constants';
 
-const OutlineButton = (props) => {
+const OutlineButtonStyle = {
+  borderWidth: 2,
+  backgroundColor: 'transparent',
+};
 
-  const buttonStyle = {
-    borderWidth: 1,
-    borderColor: PRIMARY_BORDER_COLOR,
-    ...DEFAULT_BUTTON_STYLE,
+const OutlineButtonTextStyle = {
+  color: buttonDefaultColor,
+};
+
+const OutlineButton = (props) => (
+  <StyledButton {...props} style={{
+    ...OutlineButtonStyle,
     ...props.style,
-  };
-
-  const textStyle = {
-    fontSize: DEFAULT_BUTTON_TEXT_FONT_SIZE,
-    color: (props.style && props.style.color) || PRIMARY_TEXT_COLOR,
-  };
-
-  return (
-    <TouchableOpacity onPress={props.onPress} style={buttonStyle} activeOpacity={DEFAULT_ACTIVE_BUTTON_OPACITY}>
-      <Text style={textStyle}>{props.title}</Text>
-    </TouchableOpacity>
-  );
-
-}
+    }}>
+    <ButtonText style={{
+      ...OutlineButtonTextStyle,
+      ...props.style,
+      }}>
+      {props.title}
+    </ButtonText>
+  </StyledButton>
+);
 
 export default OutlineButton;
