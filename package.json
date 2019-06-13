@@ -1,6 +1,6 @@
 {
   "name": "react-native-custom-button",
-  "version": "1.0.0",
+  "version": "2.0.0-beta",
   "description": "",
   "main": "src/index.js",
   "scripts": {
@@ -9,8 +9,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "peerDependencies": {
     "react": "^16.8.6",
-    "react-native": "^0.59.3"
+    "react-native": "^0.59.9"
+  },
+  "dependencies": {
+    "styled-components": "^4.3.1"
   }
 }
