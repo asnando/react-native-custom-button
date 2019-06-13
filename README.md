@@ -1,12 +1,9 @@
 # React Native Custom Button
-🕹 Super simple custom button that overrides default react native button style
+🕹 Super simple custom button that overrides default React Native button style
 
 # Installation
 ```bash
-git clone https://github.com/ffrm/react-native-custom-button
-cd react-native-custom-button
-# Install dependencies
-npm i
+yarn install https://github.com/ffrm/react-native-custom-button
 ```
 
 # Usage
@@ -14,15 +11,25 @@ npm i
 import { View } from 'react-native';
 import { Button } from 'react-native-custom-button';
 
+const customButtonStyle = {
+  backgroundColor: '#CCC'
+};
+
 const customComponent = (props) => {
   return (
     <View>
-      <Button style={customButtonStyle} />
+      <Button style={customButtonStyle} onPress={() => anyOnPressMethod()} />
     </View>
   );
 }
+```
 
-const customButtonStyle = {
-  backgroundColor: '#CCC'
-}
+# Types of buttons
+```javascript
+import {
+  Button,
+  TextButton,
+  OutlineButton,
+  FullWidthButton,
+} from 'react-native-custom-button';
 ```
