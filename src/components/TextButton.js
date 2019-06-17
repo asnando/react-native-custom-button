@@ -13,12 +13,12 @@ const TextButtonTextStyle = {
 
 const TextButton = (props) => (
   <StyledButton {...props} style={{
-      ...props.style,
       ...TextButtonStyle,
+      ...props.style,
     }}>
     <ButtonText style={{
+        ...TextButtonTextStyle,
         ...props.style,
-        ...TextButtonTextStyle
       }}>
       {props.title}
     </ButtonText>
