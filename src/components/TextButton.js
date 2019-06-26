@@ -11,18 +11,20 @@ const TextButtonTextStyle = {
   color: buttonDefaultColor,
 };
 
-const TextButton = (props) => (
-  <StyledButton {...props} style={{
-      ...TextButtonStyle,
-      ...props.style,
-    }}>
-    <ButtonText style={{
-        ...TextButtonTextStyle,
-        ...props.style,
-      }}>
-      {props.title}
-    </ButtonText>
-  </StyledButton>
-);
+const TextButton = (props) => {
+  const {
+    title,
+    buttonTintColor,
+    buttonTextColor,
+    onPress,
+  } = props;
+  return (
+    <StyledButton buttonTintColor={buttonTintColor} style={TextButtonStyle} onPress={onPress}>
+      <ButtonText buttonTextColor={buttonTextColor} style={TextButtonTextStyle}>
+        {title}
+      </ButtonText>
+    </StyledButton>
+  );
+};
 
 export default TextButton;

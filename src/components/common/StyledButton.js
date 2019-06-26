@@ -12,15 +12,8 @@ const StyledButton = styled.TouchableOpacity`
   height: ${buttonHeight};
   border-radius: ${buttonBorderRadius};
   border-color: ${buttonDefaultBorderColor};
-  background-color: ${
-    ({ style = {} }) => style.backgroundColor || buttonDefaultColor
-  };
-  width: ${
-    ({ style = {} }) => style.width || buttonDefaultWidth
-  };
-  borderWidth: ${
-    ({ style = {} }) => style.borderWidth || 0
-  };
+  background-color: ${props => props.buttonTintColor || buttonDefaultColor};
+  width: ${buttonDefaultWidth};
 `;
 
 export default StyledButton;

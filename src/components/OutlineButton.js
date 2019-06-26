@@ -12,18 +12,20 @@ const OutlineButtonTextStyle = {
   color: buttonDefaultColor,
 };
 
-const OutlineButton = (props) => (
-  <StyledButton {...props} style={{
-    ...OutlineButtonStyle,
-    ...props.style,
-    }}>
-    <ButtonText style={{
-      ...OutlineButtonTextStyle,
-      ...props.style,
-      }}>
-      {props.title}
-    </ButtonText>
-  </StyledButton>
-);
+const OutlineButton = (props) => {
+  const {
+    title,
+    buttonTintColor,
+    buttonTextColor,
+    onPress,
+  } = props;
+  return (
+    <StyledButton buttonTintColor={buttonTintColor} style={OutlineButtonStyle} onPress={onPress}>
+      <ButtonText buttonTextColor={buttonTextColor} style={OutlineButtonTextStyle}>
+        {title}
+      </ButtonText>
+    </StyledButton>
+  );
+};
 
 export default OutlineButton;

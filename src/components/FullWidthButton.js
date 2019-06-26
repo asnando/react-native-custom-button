@@ -6,15 +6,20 @@ const FullWidthButtonStyle = {
   width: '100%',
 };
 
-const FullWidthButton = props => (
-  <StyledButton {...props} style={{
-    ...FullWidthButtonStyle,
-    ...props.style,
-    }}>
-    <ButtonText style={props.style}>
-      {props.title}
-    </ButtonText>
-  </StyledButton>
-);
+const FullWidthButton = (props) => {
+  const {
+    title,
+    buttonTintColor,
+    buttonTextColor,
+    onPress,
+  } = props;
+  return (
+    <StyledButton buttonTintColor={buttonTintColor} style={FullWidthButtonStyle} onPress={onPress}>
+      <ButtonText buttonTextColor={buttonTextColor}>
+        {title}
+      </ButtonText>
+    </StyledButton>
+  );
+};
 
 export default FullWidthButton;
