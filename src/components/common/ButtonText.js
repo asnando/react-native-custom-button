@@ -11,9 +11,7 @@ const ButtonText = styled.Text`
   line-height: ${buttonHeight};
   text-align: center;
   text-align-vertical: center;
-  color: ${
-    ({ style = {} }) => style.color || buttonDefaultFontColor
-  };
+  color: ${props => props.buttonTextColor || buttonDefaultFontColor};
 `;
 
 export default ButtonText;
