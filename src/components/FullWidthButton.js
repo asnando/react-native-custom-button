@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import StyledButton from './common/StyledButton';
 import ButtonText from './common/ButtonText';
 
@@ -20,6 +21,19 @@ const FullWidthButton = (props) => {
       </ButtonText>
     </StyledButton>
   );
+};
+
+FullWidthButton.defaultProps = {
+  buttonTintColor: null,
+  buttonTextColor: null,
+  onPress: null,
+};
+
+FullWidthButton.propTypes = {
+  title: PropTypes.string.isRequired,
+  buttonTintColor: PropTypes.string,
+  buttonTextColor: PropTypes.string,
+  onPress: PropTypes.func,
 };
 
 export default FullWidthButton;

@@ -22,6 +22,8 @@
         "react"
     ],
     "rules": {
-        "react/jsx-filename-extension": "off"
+        "react/jsx-filename-extension": "off",
+        "import/no-unresolved": "off",
+        "no-unused-vars": "off"
     }
 }
