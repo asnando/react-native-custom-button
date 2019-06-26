@@ -4,14 +4,6 @@ import StyledButton from './common/StyledButton';
 import ButtonText from './common/ButtonText';
 import { buttonDefaultColor } from '../constants';
 
-const TextButtonStyle = {
-  backgroundColor: 'transparent',
-};
-
-const TextButtonTextStyle = {
-  color: buttonDefaultColor,
-};
-
 const TextButton = (props) => {
   const {
     title,
@@ -20,8 +12,8 @@ const TextButton = (props) => {
     onPress,
   } = props;
   return (
-    <StyledButton buttonTintColor={buttonTintColor} style={TextButtonStyle} onPress={onPress}>
-      <ButtonText buttonTextColor={buttonTextColor} style={TextButtonTextStyle}>
+    <StyledButton buttonTintColor={buttonTintColor} onPress={onPress}>
+      <ButtonText buttonTextColor={buttonTextColor}>
         {title}
       </ButtonText>
     </StyledButton>
@@ -29,8 +21,8 @@ const TextButton = (props) => {
 };
 
 TextButton.defaultProps = {
-  buttonTintColor: null,
-  buttonTextColor: null,
+  buttonTintColor: 'transparent',
+  buttonTextColor: buttonDefaultColor,
   onPress: null,
 };
 

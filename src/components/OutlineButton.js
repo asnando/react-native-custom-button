@@ -6,11 +6,6 @@ import { buttonDefaultColor } from '../constants';
 
 const OutlineButtonStyle = {
   borderWidth: 2,
-  backgroundColor: 'transparent',
-};
-
-const OutlineButtonTextStyle = {
-  color: buttonDefaultColor,
 };
 
 const OutlineButton = (props) => {
@@ -22,7 +17,7 @@ const OutlineButton = (props) => {
   } = props;
   return (
     <StyledButton buttonTintColor={buttonTintColor} style={OutlineButtonStyle} onPress={onPress}>
-      <ButtonText buttonTextColor={buttonTextColor} style={OutlineButtonTextStyle}>
+      <ButtonText buttonTextColor={buttonTextColor}>
         {title}
       </ButtonText>
     </StyledButton>
@@ -30,8 +25,8 @@ const OutlineButton = (props) => {
 };
 
 OutlineButton.defaultProps = {
-  buttonTintColor: null,
-  buttonTextColor: null,
+  buttonTintColor: 'transparent',
+  buttonTextColor: buttonDefaultColor,
   onPress: null,
 };
 
