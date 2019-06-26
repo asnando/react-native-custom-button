@@ -9,9 +9,10 @@ const Button = (props) => {
     buttonTintColor,
     buttonTextColor,
     onPress,
+    style: propStyle,
   } = props;
   return (
-    <StyledButton buttonTintColor={buttonTintColor} onPress={onPress}>
+    <StyledButton buttonTintColor={buttonTintColor} onPress={onPress} style={propStyle}>
       <ButtonText buttonTextColor={buttonTextColor}>
         {title}
       </ButtonText>
@@ -23,6 +24,7 @@ Button.defaultProps = {
   buttonTintColor: null,
   buttonTextColor: null,
   onPress: null,
+  style: {},
 };
 
 Button.propTypes = {
@@ -30,6 +32,7 @@ Button.propTypes = {
   buttonTintColor: PropTypes.string,
   buttonTextColor: PropTypes.string,
   onPress: PropTypes.func,
+  style: PropTypes.object,
 };
 
 export default Button;

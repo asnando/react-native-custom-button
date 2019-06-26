@@ -43,3 +43,4 @@ import { FullWidthButton } from 'react-native-custom-button';
 | buttonTintColor | String | false | Button background color
 | buttonTextColor | String | false | Button text color
 | onPress | Function | false | Callback for onPress event
+| style | Object | false | Custom style object

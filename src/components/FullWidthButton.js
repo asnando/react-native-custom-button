@@ -13,9 +13,10 @@ const FullWidthButton = (props) => {
     buttonTintColor,
     buttonTextColor,
     onPress,
+    style: propStyle,
   } = props;
   return (
-    <StyledButton buttonTintColor={buttonTintColor} style={FullWidthButtonStyle} onPress={onPress}>
+    <StyledButton buttonTintColor={buttonTintColor} style={[FullWidthButtonStyle, propStyle]} onPress={onPress}>
       <ButtonText buttonTextColor={buttonTextColor}>
         {title}
       </ButtonText>
@@ -27,6 +28,7 @@ FullWidthButton.defaultProps = {
   buttonTintColor: null,
   buttonTextColor: null,
   onPress: null,
+  style: {},
 };
 
 FullWidthButton.propTypes = {
@@ -34,6 +36,7 @@ FullWidthButton.propTypes = {
   buttonTintColor: PropTypes.string,
   buttonTextColor: PropTypes.string,
   onPress: PropTypes.func,
+  style: PropTypes.object,
 };
 
 export default FullWidthButton;

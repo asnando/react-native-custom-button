@@ -10,9 +10,10 @@ const TextButton = (props) => {
     buttonTintColor,
     buttonTextColor,
     onPress,
+    style: propStyle,
   } = props;
   return (
-    <StyledButton buttonTintColor={buttonTintColor} onPress={onPress}>
+    <StyledButton buttonTintColor={buttonTintColor} onPress={onPress} style={propStyle}>
       <ButtonText buttonTextColor={buttonTextColor}>
         {title}
       </ButtonText>
@@ -24,6 +25,7 @@ TextButton.defaultProps = {
   buttonTintColor: 'transparent',
   buttonTextColor: buttonDefaultColor,
   onPress: null,
+  style: {},
 };
 
 TextButton.propTypes = {
@@ -31,6 +33,7 @@ TextButton.propTypes = {
   buttonTintColor: PropTypes.string,
   buttonTextColor: PropTypes.string,
   onPress: PropTypes.func,
+  style: PropTypes.object,
 };
 
 export default TextButton;
