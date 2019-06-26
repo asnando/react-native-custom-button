@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "test": ""
+    "lint": "eslint src/"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +15,12 @@
   },
   "dependencies": {
     "styled-components": "^4.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.14.2"
   }
 }
