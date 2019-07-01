@@ -14,11 +14,16 @@ const OutlineButton = (props) => {
     buttonTintColor,
     buttonTextColor,
     onPress,
-    style: propStyle,
+    buttonStyle,
+    textStyle,
   } = props;
   return (
-    <StyledButton buttonTintColor={buttonTintColor} style={[OutlineButtonStyle, propStyle]} onPress={onPress}>
-      <ButtonText buttonTextColor={buttonTextColor}>
+    <StyledButton
+      buttonTintColor={buttonTintColor}
+      style={[OutlineButtonStyle, buttonStyle]}
+      onPress={onPress}
+    >
+      <ButtonText buttonTextColor={buttonTextColor} style={textStyle}>
         {title}
       </ButtonText>
     </StyledButton>
@@ -29,7 +34,8 @@ OutlineButton.defaultProps = {
   buttonTintColor: 'transparent',
   buttonTextColor: buttonDefaultColor,
   onPress: null,
-  style: {},
+  buttonStyle: {},
+  textStyle: {},
 };
 
 OutlineButton.propTypes = {
@@ -37,7 +43,8 @@ OutlineButton.propTypes = {
   buttonTintColor: PropTypes.string,
   buttonTextColor: PropTypes.string,
   onPress: PropTypes.func,
-  style: PropTypes.object,
+  buttonStyle: PropTypes.object,
+  textStyle: PropTypes.object,
 };
 
 export default OutlineButton;
