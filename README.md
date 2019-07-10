@@ -36,6 +36,27 @@ import { FullWidthButton } from 'react-native-custom-button';
 <FullWidthButton title="Button" />
 ```
 
+## RoundedButton
+```javascript
+import { RoundedButton } from 'react-native-custom-button';
+// ...
+<RoundedButton title="Button" />
+```
+
+## RoundedOutlineButton
+```javascript
+import { RoundedOutlineButton } from 'react-native-custom-button';
+// ...
+<RoundedOutlineButton title="Button" />
+```
+
+## UnderlinedButton
+```javascript
+import { UnderlinedButton } from 'react-native-custom-button';
+// ...
+<UnderlinedButton title="Button" />
+```
+
 # Buttons options
 | Prop | Type | Required | Description |
 | ---- | ---- | -------- | ----------- |
