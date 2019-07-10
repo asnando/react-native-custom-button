@@ -2,6 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import StyledButton from './common/StyledButton';
 import ButtonText from './common/ButtonText';
+import {
+  buttonDefaultColor,
+} from '../constants';
 
 const RoundedButtonStyle = {
   borderRadius: 16,
@@ -41,8 +44,8 @@ const RoundedButton = (props) => {
 };
 
 RoundedButton.defaultProps = {
-  buttonTintColor: null,
-  buttonTextColor: null,
+  buttonTintColor: buttonDefaultColor,
+  buttonTextColor: buttonDefaultColor,
   onPress: null,
   buttonStyle: {},
   textStyle: {},

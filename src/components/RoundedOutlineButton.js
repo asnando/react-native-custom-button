@@ -24,6 +24,7 @@ const RoundedOutlineButton = (props) => {
     title,
     buttonTintColor,
     buttonTextColor,
+    buttonBorderColor,
     onPress,
     buttonStyle,
     textStyle,
@@ -31,6 +32,7 @@ const RoundedOutlineButton = (props) => {
   return (
     <StyledButton
       buttonTintColor={buttonTintColor}
+      buttonBorderColor={buttonBorderColor}
       onPress={onPress}
       style={[buttonStyle, RoundedOutlineButtonStyle]}
     >
@@ -47,6 +49,7 @@ const RoundedOutlineButton = (props) => {
 RoundedOutlineButton.defaultProps = {
   buttonTintColor: 'transparent',
   buttonTextColor: buttonDefaultColor,
+  buttonBorderColor: buttonDefaultColor,
   onPress: null,
   buttonStyle: {},
   textStyle: {},
@@ -56,6 +59,7 @@ RoundedOutlineButton.propTypes = {
   title: PropTypes.string.isRequired,
   buttonTintColor: PropTypes.string,
   buttonTextColor: PropTypes.string,
+  buttonBorderColor: PropTypes.string,
   onPress: PropTypes.func,
   buttonStyle: PropTypes.object,
   textStyle: PropTypes.object,

@@ -11,7 +11,7 @@ import {
 const StyledButton = styled.TouchableOpacity`
   height: ${buttonHeight};
   border-radius: ${buttonBorderRadius};
-  border-color: ${buttonDefaultBorderColor};
+  border-color: ${props => props.buttonBorderColor || buttonDefaultBorderColor};
   background-color: ${props => props.buttonTintColor || buttonDefaultColor};
   width: ${buttonDefaultWidth};
   align-items: center;

@@ -63,6 +63,7 @@ import { UnderlinedButton } from 'react-native-custom-button';
 | title | String | true | Button title
 | buttonTintColor | String | false | Button background color
 | buttonTextColor | String | false | Button text color
+| buttonBorderColor | String | false | Border color to be used by some type of buttons
 | onPress | Function | false | Callback for onPress event
 | buttonStyle | Object | false | Custom button style object
 | textStyle | Object | false | Custom text style object
