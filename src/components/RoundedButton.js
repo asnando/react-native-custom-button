@@ -4,6 +4,7 @@ import StyledButton from './common/StyledButton';
 import ButtonText from './common/ButtonText';
 import {
   buttonDefaultColor,
+  buttonDefaultFontColor,
   buttonPropTypes,
   buttonDefaultProps,
 } from '../constants';
@@ -54,7 +55,7 @@ const RoundedButton = (props) => {
 RoundedButton.defaultProps = {
   ...buttonDefaultProps,
   buttonTintColor: buttonDefaultColor,
-  buttonTextColor: buttonDefaultColor,
+  buttonTextColor: buttonDefaultFontColor,
 };
 
 RoundedButton.propTypes = {
