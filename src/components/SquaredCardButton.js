@@ -9,20 +9,23 @@ import {
   buttonIconSize,
 } from '../constants';
 
+const SQUARED_BUTTON_TEXT_PADDING = 6;
+const SQUARED_BUTTON_TEXT_PADDING_BOTTOM = 8;
+
 const SquaredButtonStyle = {
   height: 128,
   width: 128,
   borderWidth: 2,
-  paddingLeft: 8,
-  paddingTop: 8,
-  paddingRight: 8,
-  paddingBottom: 8,
+  paddingLeft: SQUARED_BUTTON_TEXT_PADDING,
+  paddingTop: SQUARED_BUTTON_TEXT_PADDING,
+  paddingRight: SQUARED_BUTTON_TEXT_PADDING,
+  paddingBottom: SQUARED_BUTTON_TEXT_PADDING_BOTTOM,
   justifyContent: 'flex-end',
   borderRadius: 16,
 };
 
 const SquaredButtonTextStyle = {
-  fontSize: 16,
+  fontSize: 14,
   paddingTop: 6,
 };
 

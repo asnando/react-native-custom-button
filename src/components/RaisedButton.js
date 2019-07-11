@@ -7,11 +7,17 @@ import {
   buttonDefaultProps,
 } from '../constants';
 
+const RAISE_BUTTON_BORDER_WIDTH = 4;
+
 const RaisedButtonStyle = {
-  borderBottomWidth: 4,
+  borderBottomWidth: RAISE_BUTTON_BORDER_WIDTH,
   borderRightWidth: 1,
   borderLeftWidth: 1,
-  borderRadius: 8,
+  borderRadius: (RAISE_BUTTON_BORDER_WIDTH * 2),
+};
+
+const RaisedButtonTextStyle = {
+  marginTop: (RAISE_BUTTON_BORDER_WIDTH / 2),
 };
 
 const RaisedButton = (props) => {
@@ -33,7 +39,7 @@ const RaisedButton = (props) => {
     >
       <ButtonText
         buttonTextColor={buttonTextColor}
-        style={[RaisedButtonStyle, textStyle]}
+        style={[RaisedButtonTextStyle, textStyle]}
       >
         {title}
       </ButtonText>
