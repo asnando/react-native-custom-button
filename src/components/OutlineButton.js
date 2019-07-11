@@ -2,7 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import StyledButton from './common/StyledButton';
 import ButtonText from './common/ButtonText';
-import { buttonDefaultColor } from '../constants';
+import {
+  buttonDefaultColor,
+  buttonDefaultProps,
+  buttonPropTypes,
+} from '../constants';
 
 const OutlineButtonStyle = {
   borderWidth: 2,
@@ -31,20 +35,13 @@ const OutlineButton = (props) => {
 };
 
 OutlineButton.defaultProps = {
+  ...buttonDefaultProps,
   buttonTintColor: 'transparent',
   buttonTextColor: buttonDefaultColor,
-  onPress: null,
-  buttonStyle: {},
-  textStyle: {},
 };
 
 OutlineButton.propTypes = {
-  title: PropTypes.string.isRequired,
-  buttonTintColor: PropTypes.string,
-  buttonTextColor: PropTypes.string,
-  onPress: PropTypes.func,
-  buttonStyle: PropTypes.object,
-  textStyle: PropTypes.object,
+  ...buttonPropTypes,
 };
 
 export default OutlineButton;
