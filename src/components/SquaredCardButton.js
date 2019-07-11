@@ -12,7 +12,6 @@ import {
 const SquaredButtonStyle = {
   height: 128,
   width: 128,
-  backgroundColor: 'transparent',
   borderWidth: 2,
   paddingLeft: 8,
   paddingTop: 8,
@@ -67,6 +66,7 @@ const SquaredCardButton = (props) => {
 
 SquaredCardButton.defaultProps = {
   ...buttonDefaultProps,
+  buttonTintColor: 'transparent',
   buttonIcon: null,
   buttonIconSize: buttonIconSize,
   buttonIconColor: null,
