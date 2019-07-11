@@ -7,7 +7,7 @@ import {
 
 const renderButtonIcon = (source, buttonIconProps = {}) => {
   const resolvedButtonIcon = resolveButtonIconSource(source, buttonIconProps);
-  if (typeof resolvedButtonIcon !== null && typeof resolvedButtonIcon === 'object') {
+  if (resolvedButtonIcon !== null && typeof resolvedButtonIcon === 'object') {
     if (typeof resolvedButtonIcon.$$typeof !== 'undefined') {
       return (
         <ButtonIconContainer>
