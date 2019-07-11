@@ -12,8 +12,6 @@ import {
 const RoundedButtonStyle = {
   borderRadius: 16,
   height: 56,
-  marginTop: 8,
-  marginBottom: 8,
   width: '100%',
 };
 
