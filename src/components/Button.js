@@ -2,6 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import StyledButton from './common/StyledButton';
 import ButtonText from './common/ButtonText';
+import {
+  buttonPropTypes,
+  buttonDefaultProps,
+} from '../constants';
 
 const Button = (props) => {
   const {
@@ -22,20 +26,11 @@ const Button = (props) => {
 };
 
 Button.defaultProps = {
-  buttonTintColor: null,
-  buttonTextColor: null,
-  onPress: null,
-  buttonStyle: {},
-  textStyle: {},
+  ...buttonDefaultProps,
 };
 
 Button.propTypes = {
-  title: PropTypes.string.isRequired,
-  buttonTintColor: PropTypes.string,
-  buttonTextColor: PropTypes.string,
-  onPress: PropTypes.func,
-  buttonStyle: PropTypes.object,
-  textStyle: PropTypes.object,
+  ...buttonPropTypes,
 };
 
 export default Button;

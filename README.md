@@ -6,6 +6,13 @@
 yarn install react-native-custom-button
 ```
 
+# Dependencies
+Before start using this lib we need to add ```react-native-vector-icons``` dependency:
+```bash
+yarn add react-native-vector-icons
+react-native link react-native-vector-icons
+```
+
 # Types of buttons
 
 ## Button
@@ -36,12 +43,44 @@ import { FullWidthButton } from 'react-native-custom-button';
 <FullWidthButton title="Button" />
 ```
 
+## RoundedButton
+```javascript
+import { RoundedButton } from 'react-native-custom-button';
+// ...
+<RoundedButton title="Button" />
+```
+
+## RoundedOutlineButton
+```javascript
+import { RoundedOutlineButton } from 'react-native-custom-button';
+// ...
+<RoundedOutlineButton title="Button" />
+```
+
+## UnderlinedButton
+```javascript
+import { UnderlinedButton } from 'react-native-custom-button';
+// ...
+<UnderlinedButton title="Button" />
+```
+
+## SquaredCardButton
+```javascript
+import { SquaredCardButton } from 'react-native-custom-button';
+// ...
+<SquaredCardButton title="Button" />
+```
+
 # Buttons options
-| Prop | Type | Required | Description |
-| ---- | ---- | -------- | ----------- |
-| title | String | true | Button title
-| buttonTintColor | String | false | Button background color
-| buttonTextColor | String | false | Button text color
-| onPress | Function | false | Callback for onPress event
-| buttonStyle | Object | false | Custom button style object
-| textStyle | Object | false | Custom text style object
+| Prop | Type | Required | Description | Support |
+| ---- | ---- | -------- | ----------- | ------- |
+| title | String | true | Button title | * |
+| buttonTintColor | String | false | Button background color | * |
+| buttonTextColor | String | false | Button text color | * |
+| buttonBorderColor | String | false | Border color to be used by some type of buttons | * |
+| onPress | Function | false | Callback for onPress event | * |
+| buttonStyle | Object | false | Custom button style object | * |
+| buttonTextStyle | Object | false | Custom text style object | * |
+| buttonIcon | String/URL/Image | false | Icon image to render ```(.svg not supported)```. Support icons from <b>react-native-vector-icons</b>. Use this prop in the following format: ```iconSource/iconName``` | SquaredCardButton |
+| buttonIconSize | Number | false | Icon size | SquaredCardButton |
+| buttonIconColor | Color | false | Color to be used in icon when using the react-native-vector-icons | SquaredCardButton |
