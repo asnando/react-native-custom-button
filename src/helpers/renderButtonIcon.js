@@ -18,7 +18,7 @@ const renderButtonIcon = (source, buttonIconProps = {}) => {
   }
   return (
     <ButtonIconContainer {...buttonIconProps}>
-      <ButtonIcon source={resolvedButtonIcon} {...buttonIconProps} />
+      <ButtonIcon resizeMode="stretch" source={resolvedButtonIcon} {...buttonIconProps} />
     </ButtonIconContainer>
   );
 };

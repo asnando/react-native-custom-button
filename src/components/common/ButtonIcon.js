@@ -5,16 +5,14 @@ import {
 } from '../../constants';
 
 export const ButtonIconContainer = styled.View`
-  width: ${props => props.buttonIconSize || buttonIconSize};
-  height: ${props => props.buttonIconSize || buttonIconSize};
+  width: ${props => (props.buttonIconSize || buttonIconSize) * 1.25};
+  height: ${props => (props.buttonIconSize || buttonIconSize) * 1.25};
   flex: 1;
   justify-content: center;
-  flex-wrap: wrap;
-  overflow: hidden;
+  align-items: center;
 `;
 
 export const ButtonIcon = styled.Image`
   width: ${props => props.buttonIconSize || buttonIconSize};
   height: ${props => props.buttonIconSize || buttonIconSize};
-  border-radius: ${buttonIconBorderRadius};
 `;
