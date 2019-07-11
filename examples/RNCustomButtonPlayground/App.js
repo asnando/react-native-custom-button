@@ -34,7 +34,7 @@ const App = () => {
           buttonTextColor={'#303030'}
           // buttonIcon="https://png.pngtree.com/element_our/sm/20180626/sm_5b321ca7a1ca4.png"
           buttonIcon="AntDesign/hearto"
-          buttonIconColor="orange"
+          buttonIconColor="red"
         />
       </SafeAreaView>
     </Fragment>
@@ -44,6 +44,9 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    width: '90%',
+    marginLeft: 'auto',
+    marginRight: 'auto',
     alignItems: 'center',
     justifyContent: 'center',
   },
