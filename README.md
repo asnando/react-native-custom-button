@@ -84,3 +84,17 @@ import { SquaredCardButton } from 'react-native-custom-button';
 | buttonIcon | String/URL/Image | false | Icon image to render ```(.svg not supported)```. Support icons from <b>react-native-vector-icons</b>. Use this prop in the following format: ```iconSource/iconName``` | SquaredCardButton |
 | buttonIconSize | Number | false | Icon size | SquaredCardButton |
 | buttonIconColor | Color | false | Color to be used in icon when using the react-native-vector-icons | SquaredCardButton |
+
+
+# Example
+Access the example app on ```examples/RNCustomButtonPlayground``` and:
+
+```bash
+npm install
+npm run start
+npm run ios
+# or
+npm run android
+```
+
+![Simulator Screen Shot - iPhone X - 2019-07-29 at 13 01 19](https://user-images.githubusercontent.com/13858601/62063330-07f94980-b201-11e9-9acb-4072a13aea04.png)
