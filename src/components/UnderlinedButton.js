@@ -23,7 +23,7 @@ const UnderlinedButton = (props) => {
   } = props;
   return (
     <StyledButton buttonTintColor={buttonTintColor} onPress={onPress} style={buttonStyle}>
-      <ButtonText buttonTextColor={buttonTextColor} style={[buttonTextStyle, UnderlinedButtonTextStyle]}>
+      <ButtonText numberOfLines={1} buttonTextColor={buttonTextColor} style={[buttonTextStyle, UnderlinedButtonTextStyle]}>
         {title}
       </ButtonText>
     </StyledButton>

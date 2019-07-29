@@ -56,7 +56,7 @@ const SquaredCardButton = (props) => {
       style={[buttonStyle, SquaredButtonStyle]}
     >
       {renderButtonIcon(buttonIcon, buttonIconProps)}
-      <ButtonText
+      <ButtonText numberOfLines={1}
         numberOfLines={2}
         buttonTextColor={buttonTextColor}
         style={[buttonTextStyle, SquaredButtonTextStyle]}

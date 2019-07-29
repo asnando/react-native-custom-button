@@ -36,7 +36,7 @@ const RoundedOutlineButton = (props) => {
       onPress={onPress}
       style={[buttonStyle, RoundedOutlineButtonStyle]}
     >
-      <ButtonText
+      <ButtonText numberOfLines={1}
         buttonTextColor={buttonTextColor}
         style={[buttonTextStyle, RoundedOutlineButtonTextStyle]}
       >

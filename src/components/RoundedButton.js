@@ -37,7 +37,7 @@ const RoundedButton = (props) => {
         RoundedButtonStyle,
       ]}
     >
-      <ButtonText
+      <ButtonText numberOfLines={1}
         buttonTextColor={buttonTextColor}
         style={[
           buttonTextStyle,

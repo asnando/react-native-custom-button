@@ -19,7 +19,7 @@ const TextButton = (props) => {
   } = props;
   return (
     <StyledButton buttonTintColor={buttonTintColor} onPress={onPress} style={buttonStyle}>
-      <ButtonText buttonTextColor={buttonTextColor} style={buttonTextStyle}>
+      <ButtonText numberOfLines={1} buttonTextColor={buttonTextColor} style={buttonTextStyle}>
         {title}
       </ButtonText>
     </StyledButton>

@@ -37,7 +37,7 @@ const RaisedButton = (props) => {
       onPress={onPress}
       style={[RaisedButtonStyle, buttonStyle]}
     >
-      <ButtonText
+      <ButtonText numberOfLines={1}
         buttonTextColor={buttonTextColor}
         style={[RaisedButtonTextStyle, buttonTextStyle]}
       >
