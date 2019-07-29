@@ -9,6 +9,9 @@ import {
 const ButtonText = styled.Text`
   font-size: ${buttonFontSize};
   color: ${props => props.buttonTextColor || buttonDefaultFontColor};
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
 `;
 
 export default ButtonText;
