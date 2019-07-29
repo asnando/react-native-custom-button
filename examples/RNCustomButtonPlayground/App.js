@@ -27,14 +27,16 @@ const App = () => {
         <RoundedButton title="RoundedButton" />
         <RoundedOutlineButton title="RoundedOutlineButton" />
         <TextButton title="TextButton" />
+        <TextButton title="Another button with long long text" />
         <UnderlinedButton title="UnderlinedButton" />
         <SquaredCardButton
           title="SquaredCardButton"
-          buttonBorderColor={'#808080'}
-          buttonTextColor={'#303030'}
-          // buttonIcon="https://png.pngtree.com/element_our/sm/20180626/sm_5b321ca7a1ca4.png"
+          buttonBorderColor="rgb(32,150,243)"
+          buttonTextColor="white"
+          buttonTintColor="rgb(32,150,243)"
           buttonIcon="AntDesign/hearto"
-          buttonIconColor="red"
+          buttonIconColor="white"
+          buttonTextStyle={{ textAlign: 'left' }}
         />
       </SafeAreaView>
     </Fragment>
