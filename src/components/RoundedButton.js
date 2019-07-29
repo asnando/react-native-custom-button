@@ -26,7 +26,7 @@ const RoundedButton = (props) => {
     buttonTextColor,
     onPress,
     buttonStyle,
-    textStyle,
+    buttonTextStyle,
   } = props;
   return (
     <StyledButton
@@ -40,7 +40,7 @@ const RoundedButton = (props) => {
       <ButtonText
         buttonTextColor={buttonTextColor}
         style={[
-          textStyle,
+          buttonTextStyle,
           RoundedButtonTextStyle,
         ]}
       >

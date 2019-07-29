@@ -14,11 +14,11 @@ const Button = (props) => {
     buttonTextColor,
     onPress,
     buttonStyle,
-    textStyle,
+    buttonTextStyle,
   } = props;
   return (
     <StyledButton buttonTintColor={buttonTintColor} onPress={onPress} style={buttonStyle}>
-      <ButtonText buttonTextColor={buttonTextColor} style={textStyle}>
+      <ButtonText buttonTextColor={buttonTextColor} style={buttonTextStyle}>
         {title}
       </ButtonText>
     </StyledButton>

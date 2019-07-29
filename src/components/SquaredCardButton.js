@@ -40,7 +40,7 @@ const SquaredCardButton = (props) => {
     buttonIconColor,
     onPress,
     buttonStyle,
-    textStyle,
+    buttonTextStyle,
   } = props;
 
   const buttonIconProps = {
@@ -59,7 +59,7 @@ const SquaredCardButton = (props) => {
       <ButtonText
         numberOfLines={2}
         buttonTextColor={buttonTextColor}
-        style={[textStyle, SquaredButtonTextStyle]}
+        style={[buttonTextStyle, SquaredButtonTextStyle]}
       >
         {title}
       </ButtonText>

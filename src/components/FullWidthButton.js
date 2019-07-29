@@ -18,7 +18,7 @@ const FullWidthButton = (props) => {
     buttonTextColor,
     onPress,
     buttonStyle,
-    textStyle,
+    buttonTextStyle,
   } = props;
   return (
     <StyledButton
@@ -26,7 +26,7 @@ const FullWidthButton = (props) => {
       style={[FullWidthButtonStyle, buttonStyle]}
       onPress={onPress}
     >
-      <ButtonText buttonTextColor={buttonTextColor} style={textStyle}>
+      <ButtonText buttonTextColor={buttonTextColor} style={buttonTextStyle}>
         {title}
       </ButtonText>
     </StyledButton>

@@ -19,11 +19,11 @@ const UnderlinedButton = (props) => {
     buttonTextColor,
     onPress,
     buttonStyle,
-    textStyle,
+    buttonTextStyle,
   } = props;
   return (
     <StyledButton buttonTintColor={buttonTintColor} onPress={onPress} style={buttonStyle}>
-      <ButtonText buttonTextColor={buttonTextColor} style={[textStyle, UnderlinedButtonTextStyle]}>
+      <ButtonText buttonTextColor={buttonTextColor} style={[buttonTextStyle, UnderlinedButtonTextStyle]}>
         {title}
       </ButtonText>
     </StyledButton>

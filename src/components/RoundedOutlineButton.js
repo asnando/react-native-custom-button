@@ -27,7 +27,7 @@ const RoundedOutlineButton = (props) => {
     buttonBorderColor,
     onPress,
     buttonStyle,
-    textStyle,
+    buttonTextStyle,
   } = props;
   return (
     <StyledButton
@@ -38,7 +38,7 @@ const RoundedOutlineButton = (props) => {
     >
       <ButtonText
         buttonTextColor={buttonTextColor}
-        style={[textStyle, RoundedOutlineButtonTextStyle]}
+        style={[buttonTextStyle, RoundedOutlineButtonTextStyle]}
       >
         {title}
       </ButtonText>

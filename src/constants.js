@@ -27,5 +27,5 @@ export const buttonDefaultProps = {
   buttonBorderColor: null,
   onPress: null,
   buttonStyle: {},
-  textStyle: {},
+  buttonTextStyle: {},
 };

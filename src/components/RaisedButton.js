@@ -28,7 +28,7 @@ const RaisedButton = (props) => {
     buttonBorderColor,
     onPress,
     buttonStyle,
-    textStyle,
+    buttonTextStyle,
   } = props;
   return (
     <StyledButton
@@ -39,7 +39,7 @@ const RaisedButton = (props) => {
     >
       <ButtonText
         buttonTextColor={buttonTextColor}
-        style={[RaisedButtonTextStyle, textStyle]}
+        style={[RaisedButtonTextStyle, buttonTextStyle]}
       >
         {title}
       </ButtonText>

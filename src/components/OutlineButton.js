@@ -19,7 +19,7 @@ const OutlineButton = (props) => {
     buttonTextColor,
     onPress,
     buttonStyle,
-    textStyle,
+    buttonTextStyle,
   } = props;
   return (
     <StyledButton
@@ -27,7 +27,7 @@ const OutlineButton = (props) => {
       style={[OutlineButtonStyle, buttonStyle]}
       onPress={onPress}
     >
-      <ButtonText buttonTextColor={buttonTextColor} style={textStyle}>
+      <ButtonText buttonTextColor={buttonTextColor} style={buttonTextStyle}>
         {title}
       </ButtonText>
     </StyledButton>
